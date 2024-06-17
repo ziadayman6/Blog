@@ -96,6 +96,7 @@ h2{
     .parent{
         flex-direction: column-reverse;
         width: 90%;
+        margin-bottom: 5vw;
     }
     .imagee{
         width: 100%;
