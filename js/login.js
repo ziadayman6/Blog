@@ -20,7 +20,7 @@ btn.addEventListener('click',function(e){
         if(btn.innerHTML == "SIGNUP"){
             imgg.style.transform = "translateY(135%)"
             imgg.style.height = "42.5%"
-            imgg.style.backgroundSize = "contain"
+            imgg.style.backgroundSize = "cover"
             btn.innerHTML = "LOGIN"
             txt.innerHTML = "Already have an account ?"
         }else{
