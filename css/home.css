@@ -92,6 +92,7 @@
 @media (max-width:600px) {
     .sectionn{
         flex-direction: column-reverse;
+        margin-bottom: 20vw;
     }    
     .sectionn .friends{
         border-left: none;
