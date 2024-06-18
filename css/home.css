@@ -1,0 +1,153 @@
+.sectionn{
+    display: flex;
+}
+
+.sectionn .friends{
+    border-left: 2px solid #e5804c;
+    margin: 3vw 0px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionn .friend{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 3vw;
+}
+
+.sectionn .friends a{
+    border: 2px black solid;
+    border-radius: 5px;
+    padding: 0.5vw;
+    margin-top: 2vw;
+    color: black;
+    text-decoration: none;
+}
+
+.sectionn .friends .friend .profile{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin-bottom: 1vw;
+}
+
+.sectionn .friends .friend .profile img{
+    width: 3vw;
+    height: 3vw;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.sectionn .friends .friend button{
+    padding: 0.5vw;
+    width: 50%;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background-color: #339CB6;
+    cursor: pointer;
+}
+
+/* ----------------------------------------- */
+
+.sectionn .posts{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.sectionn .posts .post .imge img{
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sectionn .posts .post{
+    margin: 3vw 0px;
+    width: 34%;
+}   
+
+.sectionn .posts i{
+    font-size: 1.7vw;
+    cursor: pointer;
+}
+
+.sectionn .posts .post .caption p{
+    font-size: 1.2vw;
+}
+
+.sectionn .posts .post .first img{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+}
+
+.sectionn .posts .post .first{
+    margin-bottom: 1vw;
+}
+
+@media (max-width:600px) {
+    .sectionn{
+        flex-direction: column-reverse;
+    }    
+    .sectionn .friends{
+        border-left: none;
+        border-bottom: 2px #e5804c solid;
+        padding: 3vw 0px;
+        margin: 0px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }  
+    .sectionn .friend{
+        align-items: center;
+        margin-bottom: 0px;
+        width: 22%;
+    }      
+    .sectionn .friends .friend .profile{
+        align-items: center;
+        flex-direction: column;
+        gap: 0vw;
+        margin-bottom: 1vw;
+    }    
+    .sectionn .friends .friend .profile p{
+        text-align: center;
+    }
+    .sectionn .friends .friend .profile img{
+        width: 7vw;
+        height: 7vw;
+    }    
+    .sectionn .friends .friend button{
+        padding: 1.5vw 0vw;
+        width: 75%;
+    }    
+    .sectionn .friends a{
+        padding: 1.5vw 0vw;
+        margin-top: 0vw;
+        width: 20%;
+        text-align: center;
+    }      
+    .sectionn .posts{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }    
+    .sectionn .posts .post{
+        margin: 3vw 0px;
+        width: 65%;
+    }      
+    .sectionn .posts i{
+        font-size: 6vw;
+    }    
+    .sectionn .posts .post .caption p{
+        font-size: 4vw;
+    }       
+    .sectionn .posts .post .first img{
+        width: 5vw;
+        height: 5vw;
+    }    
+}
