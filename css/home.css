@@ -60,9 +60,13 @@
     width: 80%;
 }
 
-.sectionn .posts .post .imge img{
+.sectionn .posts .post .imge{
+    width: 24vw;
+    height: 30vw;
+    background-size: contain;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1vw;
 }
 
 .sectionn .posts .post{
@@ -141,6 +145,10 @@
         margin: 3vw 0px;
         width: 65%;
     }      
+    .sectionn .posts .post .imge{
+        width: 64vw;
+        height: 80vw;
+    }    
     .sectionn .posts i{
         font-size: 6vw;
     }    
