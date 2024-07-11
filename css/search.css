@@ -26,7 +26,55 @@
     font-size: 2vw;
 }
 
+.results{
+    margin-top: 4vw;
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.posts{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2vw;
+}
+
+.posts .post{
+    width: 32%;
+    margin-bottom: 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+.posts .post div{
+    position: relative;
+    width: 16vw;
+    height: 20vw;
+    background-size: cover;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.posts .post div:hover::after{
+    content: "SHOW POST";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width:600px) {
+    .sectionn{
+        margin-bottom: 20vw;
+    }
     .sectionn input{
         padding: 3vw 0px 3vw 1vw;
         font-size: 3.5vw;
@@ -34,5 +82,20 @@
     }    
     .sectionn .sear4 i{
         font-size: 5vw;
+    }    
+    .results{
+        margin-top: 5vw;
+        width: 90%;
+    }
+    .posts{
+        margin-top: 5vw;
+    }
+    
+    .posts .post{
+        width: 48%;
+    }    
+    .posts .post div{
+        width: 40vw;
+        height: 50vw;
     }    
 }

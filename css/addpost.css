@@ -1,0 +1,112 @@
+.sectionn{
+    box-sizing: border-box;
+    padding: 3vw;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionn .all{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sectionn .all .showw{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionn .all .showw .post{
+    width: 22vw;
+    height: 27.5vw;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    margin-bottom: 1vw;
+}
+
+.sectionn .all .showw input{
+    padding: 0.5vw;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background-color: #339CB6;
+}
+
+.sectionn .all .informations{
+    width: 55%;
+}
+
+.sectionn .all .informations form{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.sectionn .all .informations form textarea{
+    height: 6vw;
+    resize: none;
+}
+
+.sectionn .all .informations form button{
+    padding: 0.5vw;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #e5804c;
+    cursor: pointer;
+}
+
+.sectionn .all .informations form textarea,
+.sectionn .all .informations form input{
+    padding: 1vw 1vw;
+    outline: none;
+    border: none;
+    background-color: white;
+    border-bottom: 3px solid #339CB6;
+}
+
+@media (max-width:600px) {
+    .sectionn{
+        margin-bottom: 20vw;
+    }
+    .sectionn .all{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sectionn .all .showw{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5vw;
+    }
+    
+    .sectionn .all .showw .post{
+        width: 60vw;
+        height: 75vw;
+        margin-bottom: 3vw;
+    }
+    
+    .sectionn .all .showw input{
+        padding: 1vw;
+    }
+    
+    .sectionn .all .informations{
+        width: 90%;
+    }
+        
+    .sectionn .all .informations form textarea{
+        height: 25vw;
+    }
+    
+    .sectionn .all .informations form button{
+        font-size: 3vw;
+        padding: 3vw 0.5vw;
+    }
+    
+    .sectionn .all .informations form textarea,
+    .sectionn .all .informations form input{
+        padding: 3vw 0px 3vw 1vw;
+        font-size: 3.5vw;
+    }    
+}
